@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <title>TEZI Untar & set image_list</title>
+    <meta http-equiv="Content-Security-Policy" 
+          content="script-src 'self' 'unsafe-inline';" />
+</head>
+<body>
+    <div class="card mx-auto border-3" style="width:10rem;">
+        <img src="../images/upload.png" class="card-img-top" alt="..." id="dropzone">
+        <div class="card-body">
+          <p class="card-text text-center">Drag & drop tar file here</p>
+        </div>
+    </div>
+    <div class="input-group mx-auto my-4" style="width: 400px;">
+        <input id="inputDir" ondragover="return false;" ondrop="return false;" type="text" class="form-control" draggable="false" placeholder="Enter directory where 'image_list' is"  aria-label="Recipient's username" aria-describedby="buttonEnviar">
+        <button class="btn btn-outline-secondary" type="button" id="buttonEnviar">Enviar</button>
+    </div>
+    <script src="../renderer.js" defer></script>
+</body>
+</html>

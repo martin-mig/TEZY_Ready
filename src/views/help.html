@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <script src="../rotulo.js"></script>
+    <title>About</title>
+</head>
+<body onload="versions()">
+    <div class="card bg-light border-dark mx-3 my-3">
+        <div class="card-header">
+          Information
+        </div>
+        <div class="card-body">
+          <h6 class="card-text" id="softVersion">Software Version: </h6>
+          <h6 class="card-text" id="commit">Commit: </h6>
+        </div>
+      </div>
+    <script>
+        function versions() {
+            document.getElementById("softVersion").innerHTML += rotulo.softVersion;
+            document.getElementById("commit").innerHTML += rotulo.commit;
+        }
+    </script>
+</body>
+</html>
